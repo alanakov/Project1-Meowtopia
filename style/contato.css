@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Code Pro";
+    padding-top: 100px;
+    background-color: #708791;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background: #708791;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header-logo img{
+    width: 15%;
+    float: left;
+    padding-top: 3%;
+}
+
+.login-button{
+    float: right;
+}
+
+header .header-nav, header .login-button {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-right: 28em;
+}
+
+header .header-nav ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+
+header .header-nav ul li {
+    padding: 25px;
+    font-size: 20px;
+}
+
+header .header-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*botao de login*/
+.login-button a{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.login-button a:hover{
+    background-color: #ffba00;
+    transition: 1s;
+}
+
+.login-button a{
+    font-family: "Source Code Pro";
+    text-decoration: none;
+    color: #708791;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 7%;
+    font-family: "Source Code Pro";
+    margin-bottom: 2%;
+    font-size: 32px;
+    color: #ffba00;
+}
+
+p {
+    margin: 10px;
+    line-height: 25px;
+}
+
+.coluna {
+    justify-content: center;
+    display: flex;
+}
+
+.flex .coluna a{
+    text-decoration: none;
+    color: #f8d36d;
+}
+
+input, textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2f3f45;
+    width: 100%;
+}
+
+button {
+    border: 0;
+}
+
+.btn {
+    background: #fff;
+    color: #708791;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ffba00;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    color: #f8d36d;
+}

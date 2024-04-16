@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Code Pro";
+    background-color: #708791;
+    color: white;
+    height: 100vh;
+    margin: auto;
+}
+
+.logo-imagem img{
+    width: 100px;
+}
+
+.logo-imagem {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}   
+
+

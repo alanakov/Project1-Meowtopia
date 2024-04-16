@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meowtopia</title>
     <link rel="stylesheet" href="../style/index.css">
-    <link rel="shortcut icon" href="../res/mewotopia-logo.png">
+    <link rel="shortcut icon" href="../res/meowtopia-logo.png">
     <script src="https://kit.fontawesome.com/6578787cbc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="../html/index.js"></script>
 </head>
 
 <body>
@@ -16,45 +19,43 @@
     
     <!--barra de navegação em cima-->
         <header>
-            <div class="header-logo">
-            <a href="index.html" title="Meowtopia">
-                <img src="/res/mewotopia-logo.png" alt="Mewotopia">
-            </a>
+            <div class="header">
+                <div class="header-logo">
+                <a href="index.html" title="Meowtopia">
+                    <img src="/res/meowtopia-logo.png" alt="Mewotopia">
+                </a>
+                </div>
+
+                <nav class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">SOBRE O JOGO</a>
+                        </li>
+                        <li>
+                            <a href="#quem-somos">QUEM SOMOS?</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">CONTATO</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="login-button">
+                    <a href="../html/fase1.html">JOGAR AGORA</a>
+                </div>
             </div>
-
-            <nav class="header-nav">
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#sobre">SOBRE O JOGO</a>
-                    </li>
-                    <li>
-                        <a href="#quem-somos">QUEM SOMOS?</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="login-button">
-                <a href="#">JOGAR AGORA</a>
-        </div>
         </header>
 
     <!--nome do jogo (banner)-->
+    <div class="center">
         <div class="name-game">
             <img src="/res/titulojogo.png" alt="Mewotopia">
         </div>
-
-        <div id="arrow">
-            <img id="arrowButton" src="../res/seta.svg">
-        </div>
+    </div>
 </div>
-
-<script src="../script/banner.js"></script>
 
     <!--sobre o jogo-->
     <section id="sobre">
@@ -72,24 +73,23 @@
     </section>
 
     <!-- fotos -->
-    <section id="photos">
-        <div class="slider">
-
-            <div class="slide-photos">
-                <img id="photo1" src="/res/imagem-jogo3.jpeg" alt="Imagem do jogo"/>
-                <img id="photo2" src="/res/imagem-jogo2.jpeg" alt="Imagem jogo"/>
-                <img id="photo3" src="/res/imagem-jogo1.jpeg" alt="Imagem jogo"/>
-            </div>
-
-            <div class="slide-nav">
-                <a href="#photo1"></a>
-                <a href="#photo2"></a>
-                <a href="#photo3"></a>
-            </div>
-
+    <div class="swiffy-slider slider-nav-caretfill slider-nav-visible slider-indicators-square">
+        <ul class="slider-container">
+            <li><img src="../res/imagem_fase1.jpeg" style="max-width: auto;height: 100%;"></li>
+            <li><img src="../res/imagem_fase2.jpeg" style="max-width: auto;height: 100%;"></li>
+            <li><img src="../res/imagem_fase3.jpeg" style="max-width: auto;height: 100%;"></li>
+        </ul>
+    
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
         </div>
-    </section>
-
+    </div>
+        
     <!-- personagens -->
     <div class="characters">
         <div class="characters-profile">
@@ -109,16 +109,16 @@
     <div id="quem-somos">
         <h2 class="centro">SOBRE A AUTORA</h2>
         <div class="flex">
-            <div class="coluna-1">
-                <img src="../res/perfil.png" alt="Alana Kovalski de Angeli">
+            <div class="centro-imagem">
+                <img class="border" src="../res/alana.jpg" alt="Alana Kovalski de Angeli">
             </div>
 
-            <div class="coluna-2">
-                <p>
+            <div class="centro">
+                <p class="bold">
                     <i class="fa-solid fa-user" style="color: #708791;"></i>
                     Alana Kovalski de Angeli
                 </p>
-                <p>
+                <p class="bold">
                     <i class="fa-solid fa-envelope" style="color: #708791"></i>
                     angelikovalski@gmail.com
                 </p>
@@ -127,11 +127,11 @@
 
         <h2 class="centro">SOBRE O JOGO</h2>
         <div class="flex">
-            <div class="coluna-1">
+            <div class="centro">
                 <img src="../res/construct.png" alt="Construct">
             </div>
 
-            <div class="coluna-2">
+            <div class="centro">
                 <p>Voltado ao projeto da faculdade, o jogo foi feito utilizando a engine Construct 3, onde se mostrou uma ferramenta versátil e intuitiva para a criação de games, permitindo desde a criação de personagens e cenários até a implementação de mecânicas de jogo.</p>
             </div>
         </div>
@@ -139,7 +139,7 @@
 
     <!--footer-->
     <footer>
-        <h2 class="footer">Desenvolvido por Alana Kovalski</h2>
+        <h2 class="footer-text">Desenvolvido por Alana Kovalski</h2>
     </footer>
 </body>
 </html>

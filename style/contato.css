@@ -7,96 +7,39 @@
 
 body {
     font-family: "Source Code Pro";
-    padding-top: 100px;
     background-color: #708791;
     color: white;
+    height: 100vh;
+    margin: auto;
 }
 
-header {
-    width: 100%;
-    background: #708791;
-    padding: 10px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
+.logo-imagem img{
+    width: 100px;
+}
+
+.logo-imagem {
     display: flex;
-    justify-content: space-between;
-    z-index: 1;
-}
+    justify-content: center;
+    padding-top: 10px;
+}   
 
-.header-logo img{
-    width: 15%;
-    float: left;
-    padding-top: 3%;
-}
-
-.login-button{
-    float: right;
-}
-
-header .header-nav, header .login-button {
+main {
     display: flex;
-    width: auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul {
-    display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    margin-right: 28em;
-}
-
-header .header-nav ul {
-    list-style: none;
-}
-
-li {
-    display: list-item;
-}
-
-
-header .header-nav ul li {
-    padding: 25px;
-    font-size: 20px;
-}
-
-header .header-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*botao de login*/
-.login-button a{
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.login-button a:hover{
-    background-color: #ffba00;
-    transition: 1s;
-}
-
-.login-button a{
-    font-family: "Source Code Pro";
-    text-decoration: none;
-    color: #708791;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
 main h2 {
     text-align: center;
-    margin-top: 7%;
+    margin-top: 2%;
     font-family: "Source Code Pro";
-    margin-bottom: 2%;
-    font-size: 32px;
+    font-size: 36px;
     color: #ffba00;
+}
+
+.flex .coluna .icons-coluna a {
+    font-size: 12px;
 }
 
 p {
@@ -107,6 +50,10 @@ p {
 .coluna {
     justify-content: center;
     display: flex;
+}
+
+.icons-coluna {
+    justify-content: center;
 }
 
 .flex .coluna a{
@@ -144,4 +91,89 @@ button {
 .footer {
     text-align: center;
     color: #f8d36d;
+}
+
+
+
+
+
+
+
+@media (width < 1000px){
+    body{
+        margin: auto;
+    }
+
+
+    .header {
+        gap: 200px;
+    }
+
+    .header-nav ul{
+        display: none;
+    }
+
+    .header-nav-escondido {
+        display: flex;
+        font-size: 30px;
+        align-items: center;
+        float: right;
+    }
+}
+
+
+
+@media (width < 680px){
+    body{
+        margin: auto;
+    }
+
+    .header {
+        gap: 200px;
+    }
+
+    .login-button .original {
+        display: none;
+    }
+
+    .login-button .escondido {
+        display: flex;
+    }
+
+}
+
+
+
+
+@media (width < 590px){
+    .header {
+        gap: 120px;
+    }
+}
+
+
+
+
+@media (width < 460px){
+    .header {
+        gap: 80px;
+    }
+}
+
+
+
+@media (width < 430px){
+    .header {
+        gap: 60px;
+    }
+}
+
+@media (width < 350px){
+    .header {
+        gap: 60px;
+    }
+
+    main a {
+        display: flex;
+    }
 }

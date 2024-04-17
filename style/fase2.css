@@ -49,3 +49,11 @@ body {
     font-weight: 800;
     font-size: 22px
 }
+
+
+iframe {
+    border: 0px;
+    background-color: white;
+    margin-left: 33.5%;
+    margin-top: 4%;
+}

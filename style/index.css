@@ -16,7 +16,7 @@ html {
     background-image: url("../res/background/origbig-copia.png");
     background-position: center;
     background-size: cover;
-    width: 100%;
+  
 }
 
 body {
@@ -39,7 +39,6 @@ body {
 .header-logo img{
     width: 80px;
     float: left;
-    padding-top: 20px;
 }
 
 header .login-button {
@@ -68,6 +67,10 @@ header .header-nav ul li a {
 
 
 /*botao de login*/
+.login-button {
+    padding-right: 40px;
+}
+
 .login-button a{
     border: none;
     padding: 10px 15px;
@@ -145,7 +148,7 @@ header .header-nav ul li a {
 
 #quem-somos {
     margin: 120px auto;
-    width: 1000px;
+    
 }
 
 #quem-somos h2 {
@@ -164,11 +167,23 @@ header .header-nav ul li a {
     border-radius: 100%;
 }
 
+.construct {
+    margin: 4% 12%;
+}
+
 /* footer */
 footer .footer-text{
     background-color: #708791;
-    width: 100%;
+    
     text-align: center;
     padding: 2%;
     font-size: 20px;
+}
+
+.slider-nav-next {
+    right: 10px !important;
+}
+
+.swiffy-slider {
+    background-color: #fffeda;
 }
